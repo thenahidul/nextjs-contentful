@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const RecipeCard = ({ recipe }) => {
 	const { title, slug, photo } = recipe.fields;
-	
+
 	return (
 		<Link href={`/recipe/${slug}`} passHref>
 			<div className="card">
@@ -26,6 +26,7 @@ const RecipeCard = ({ recipe }) => {
 				<style jsx>{`
 					.card {
 						cursor: pointer;
+						margin-bottom: 30px;
 					}
 					.btn {
 						background: #009688;
