@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const RecipeCard = ({ recipe }) => {
 	const { title, slug, photo } = recipe.fields;
-
+	
 	return (
 		<Link href={`/recipe/${slug}`} passHref>
 			<div className="card">

@@ -12,7 +12,7 @@ const RecipeSingle = ({ recipe }) => {
 		<div>
 			<div className="banner">
 				<Image
-					src={`https://${photo.fields.file.url}`}
+					src={`http://${photo.fields.file.url}`}
 					width={photo.fields.file.details.image.width}
 					height={photo.fields.file.details.image.height}
 					alt={title}
