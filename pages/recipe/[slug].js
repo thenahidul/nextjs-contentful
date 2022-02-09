@@ -17,7 +17,7 @@ const RecipeSingle = ({ recipe }) => {
 					height={photo.fields.file.details.image.height}
 					alt={title}
 				/>
-				<h2>{title}</h2>
+				<h1>{title}</h1>
 			</div>
 
 			<div className="info">
@@ -30,6 +30,9 @@ const RecipeSingle = ({ recipe }) => {
 			<div className="method">
 				<div>{documentToReactComponents(content)}</div>
 			</div>
+			<style jsx>{`
+				h1 {font-size: 30px}`
+			}</style>
 		</div>
 	);
 };
