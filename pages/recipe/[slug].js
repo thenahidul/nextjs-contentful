@@ -12,7 +12,7 @@ const RecipeSingle = ({ recipe }) => {
 		<div>
 			<div className="banner">
 				<Image
-					src={"https:" + photo.fields.file.url}
+					src={`https://${photo.fields.file.url}`}
 					width={photo.fields.file.details.image.width}
 					height={photo.fields.file.details.image.height}
 					alt={title}
@@ -31,8 +31,10 @@ const RecipeSingle = ({ recipe }) => {
 				<div>{documentToReactComponents(content)}</div>
 			</div>
 			<style jsx>{`
-				h1 {font-size: 30px}`
-			}</style>
+				h1 {
+					font-size: 30px;
+				}
+			`}</style>
 		</div>
 	);
 };
