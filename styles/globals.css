@@ -60,3 +60,7 @@ footer {
 	width: 100%;
 	box-sizing: border-box;
 }
+
+.featured img {
+	border-radius: 5px;
+}

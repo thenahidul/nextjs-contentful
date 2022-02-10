@@ -9,12 +9,13 @@ const RecipeCard = ({ recipe }) => {
 			<div className="card">
 				<div className="featured">
 					<Image
-						src={`http://${photo.fields.file.url}`}
+						src={`https://${photo.fields.file.url}`}
 						width={photo.fields.file.details.image.width}
 						height={photo.fields.file.details.image.height}
 						// width={300}
 						// height={250}
 						alt={title}
+
 					/>
 				</div>
 				<div className="content">
