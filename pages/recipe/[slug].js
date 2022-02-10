@@ -41,8 +41,8 @@ const RecipeSingle = ({ recipe }) => {
 
 /**/
 const client = createClient({
-	space: process.env.CONTENTFUL_SPACE,
-	accessToken: process.env.CONTENTFUL_TOKEN
+	space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE,
+	accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_TOKEN
 });
 
 export const getStaticProps = async ({ params }) => {

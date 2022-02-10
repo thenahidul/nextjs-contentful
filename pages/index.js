@@ -23,8 +23,8 @@ export default function Home({ recipes }) {
 
 export const getStaticProps = async () => {
 	const client = createClient({
-		space: process.env.CONTENTFUL_SPACE,
-		accessToken: process.env.CONTENTFUL_TOKEN
+		space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE,
+		accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_TOKEN
 	});
 
 	const response = await client.getEntries({ content_type: "recipe" });
