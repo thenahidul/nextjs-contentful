@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const RecipeCard = ({ recipe }) => {
@@ -8,15 +8,15 @@ const RecipeCard = ({ recipe }) => {
 		<Link href={`/recipe/${slug}`} passHref>
 			<div className="card">
 				<div className="featured">
-					<img src={`https://${photo.fields.file.url}`} alt={title} />
-					{/* <Image
+					{/* <img src={`https://${photo.fields.file.url}`} alt={title} /> */}
+					<Image
 						src={`http://${photo.fields.file.url}`}
 						width={photo.fields.file.details.image.width}
 						height={photo.fields.file.details.image.height}
 						// width={300}
 						// height={250}
 						alt={title}
-					/> */}
+					/>
 				</div>
 				<div className="content">
 					<div className="info">
