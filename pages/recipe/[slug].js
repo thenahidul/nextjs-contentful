@@ -1,6 +1,6 @@
 import { createClient } from "contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import Image from "next/image";
+// import Image from "next/image";
 import Skeleton from "../../components/Skeleton";
 
 const RecipeSingle = ({ recipe }) => {
@@ -11,7 +11,13 @@ const RecipeSingle = ({ recipe }) => {
 	return (
 		<div>
 			<div className="banner featured">
-				<Image
+				{/* <Image
+					src={`https://${photo.fields.file.url}`}
+					width={photo.fields.file.details.image.width}
+					height={photo.fields.file.details.image.height}
+					alt={title}
+				/> */}
+				<img
 					src={`https://${photo.fields.file.url}`}
 					width={photo.fields.file.details.image.width}
 					height={photo.fields.file.details.image.height}
